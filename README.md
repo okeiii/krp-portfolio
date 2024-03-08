@@ -9,4 +9,4 @@ Technologies Used:
 - Javascript
 
 Last Updated:
-07 March 2024 in the cold lands of Toronto, Canada
+07 March 2024 from the cold lands of Toronto
