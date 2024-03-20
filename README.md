@@ -9,5 +9,4 @@ Technologies Used:
 - Javascript
 
 Last Updated:
-07 March 2024 from the cold lands of Toronto# mai-demo
-# mai-demo
+07 March 2024 from the cold lands of Toronto
