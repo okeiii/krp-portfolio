@@ -1,3 +1,76 @@
-h1 {
-    color: red;
+/* Google Fonts */
+.oswald-300 {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
 }
+.oswald-500 {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Default Elements */
+body {
+    background-color: #111111;
+    margin: 0;
+}
+section {
+    padding: 3rem;
+}
+
+/* Navigation */
+#side-nav {
+    top: 40%;
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    margin: 0 4.5vw 0 0;
+    mix-blend-mode: difference;
+}
+.nav a {
+    color: #ffffff;
+    font-size: 2.8vh;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.2vh;
+    line-height: 4rem;
+}
+
+/* Hero */
+.hero {
+    top: 0;
+    position: sticky;
+    mix-blend-mode: difference;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: baseline;
+}
+.title {
+    color: #ffffff;
+    margin: 1rem;
+    font-size: 10rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.sub {
+    color: #ffffff;
+    font-size: 2.8vh;
+    letter-spacing: 0.2vh;
+    text-transform: uppercase;
+    margin: -20px 0 0 23px;
+}
+
+/* Website Gallery */
+.website-gallery {
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+/* Responsive */
