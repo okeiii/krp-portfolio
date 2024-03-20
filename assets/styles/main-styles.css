@@ -41,7 +41,6 @@ h1 {
     animation: color-change 6000ms infinite;
 }
 h2 {
-    color: #ffffff;
     font-size: 7vh;
     /* border-right: .05em solid;
     animation: caret 1s steps(1) infinite; */
@@ -55,9 +54,6 @@ p {
     right: 0;
     padding-right: 5rem;
     position: fixed;
-}
-.icon {
-    font-size: 9vh;
 }
 .nav {
     display: flex;
@@ -105,6 +101,9 @@ p {
     background-color: #111111;
     padding: 4rem;
 }
+.about h2 {
+    color: #ffffff;
+}
 .about p {
     color: #ffffff;
 }
@@ -112,7 +111,15 @@ p {
 /* Websites */
 .websites {
     height: 100vh;
+    color: #111111;
     background-color: #ffffff;
+    padding: 4rem;
+}
+.websites h2 {
+    color: #111111;
+}
+.websites p {
+    color: #111111;
 }
 
 /* Other Effects */
