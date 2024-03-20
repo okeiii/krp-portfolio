@@ -11,11 +11,43 @@
     font-weight: 500;
     font-style: normal;
 }
+.lexend-deca-300 {
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+.lexend-deca-400 {
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
 
 /* Default Elements */
+html {
+    scroll-behavior: smooth;
+}
 body {
     background-color: #111111;
     margin: 0;
+}
+h1 {
+    color: #ffffff;
+    margin: 1rem;
+    font-size: 9rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    animation: color-change 6000ms infinite;
+}
+h2 {
+    color: #ffffff;
+    font-size: 7vh;
+    /* border-right: .05em solid;
+    animation: caret 1s steps(1) infinite; */
+}
+p {
+    font-size: 4vh;
 }
 
 /* Navigation */
@@ -23,6 +55,9 @@ body {
     right: 0;
     padding-right: 5rem;
     position: fixed;
+}
+.icon {
+    font-size: 9vh;
 }
 .nav {
     display: flex;
@@ -54,14 +89,6 @@ body {
     flex-direction: row;
     justify-content: space-between;
 }
-.title {
-    color: #ffffff;
-    margin: 1rem;
-    font-size: 9rem;
-    font-weight: 900;
-    text-transform: uppercase;
-    animation: color-change 6000ms infinite;
-}
 .sub {
     color: #ffffff;
     font-size: 2.8vh;
@@ -72,23 +99,72 @@ body {
 
 /* About */
 .about {
-    height: 50vh;
-    background-color: #ffffff;
+    height: 100vh;
+    width: 100vh;
+    color: #ffffff;
+    background-color: #111111;
+    padding: 4rem;
+}
+.about p {
+    color: #ffffff;
 }
 
-/* Website Gallery */
-.website-gallery {
+/* Websites */
+.websites {
     height: 100vh;
     background-color: #ffffff;
 }
 
-/* Keyframes */
+/* Other Effects */
+.fade-in {
+  animation: fadeIn 7s;
+  -webkit-animation: fadeIn 7s;
+  -moz-animation: fadeIn 7s;
+  -o-animation: fadeIn 7s;
+  -ms-animation: fadeIn 7s;
+}
+
+/* Animation Keyframes */
+/* Color Change */
 @keyframes color-change {
     0% { color: #e3e4e6; }
     25% { color: #f7d0cb; }
     50% { color: #f9fafc; }
     75% { color: #313131; }
     100% { color: #f6d9d5; }
-  }
+}
+/* End Color Change */
+/* Fade In */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+  
+@-moz-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+  
+@-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+  
+@-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+  
+@-ms-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+/* End Fade In */
+
+/* @keyframes caret {
+    50% {
+      border-color: transparent;
+    }
+} */
 
 /* Responsive */

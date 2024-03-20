@@ -11,34 +11,42 @@
         <meta property="og:image:alt" content="" />
         <!-- CSS -->
         <link rel="stylesheet" type="text/css" href="assets/styles/main-styles.css" />
-        <!-- Google Fonts -->
+        <!-- External CSS -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- Javascript -->
         <script type="text/javascript" src="assets/js/script.js"></script>
     </head>
     <body>
         <!-- Hero Banner -->
         <section class="main">
-            <section class="hero-banner">
+            <section id="top" class="hero-banner">
                 <!-- Navigation -->
                 <nav class="sticky nav oswald-300">
-                    <a href="#">About</a>
-                    <a href="#">Websites</a>
+                    <a class="fa fa-arrow-up" href="#top"></a>
+                    <a href="#about">About</a>
+                    <a href="#websites">Websites</a>
                     <a href="#">Other Projects</a>
                     <a href="#">Contact</a>
                 </nav>
                 <!-- Hero -->
                 <div class="hero">
                     <div class="hero-wrapper">
-                        <h1 class="title oswald-500">Keilly Ruth Panis</h1>
+                        <h1 class="oswald-500">Keilly Ruth Panis</h1>
                         <p class="sub oswald-300">Full Stack Web Developer and Software Geek</p>
                     </div>
                 </div>
             </section>
-            <!-- Website Gallery -->
-            <section class="website-gallery"></section>
+            <!-- About -->
+            <section id="about" class="about">
+                <h2 class="lexend-deca-400">Weaving code into creativity and functionality.</h2>
+                <p class="lexend-deca-300 fade-in slide-in">I am a driven full stack web and software developer with a knack for delivering high quality results and digital innovations.</p>
+                <p class="lexend-deca-300 fade-in">Equipped with knowledge of the development stack from front-end technologies like HTML, CSS and Javascript to backend frameworks such as Node.js, I bring a keen eye for user experience and dedication to clean, organized code with SEO in mind.</p>
+            </section>
+            <!-- Websites -->
+            <section id="websites" class="websites"></section>
         </section>
     </body>
 </html>
