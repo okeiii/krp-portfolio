@@ -6,8 +6,8 @@ document.addEventListener('DOMContentLoaded',function(event){
     function typeWriter(text, i, fnCallback) {
         // If text isn't complete yet
         if (i < (text.length)) {
-            // Add the next letter
-        document.querySelector("h2").innerHTML = text.substring(0, i+1) +'<span aria-hidden="true"></span>';
+        // Add the next letter
+        document.querySelector(".typing").innerHTML = text.substring(0, i+1) +'<span aria-hidden="true"></span>';
   
         // Slight delay
         setTimeout(function() {

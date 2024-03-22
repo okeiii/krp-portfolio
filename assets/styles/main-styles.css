@@ -175,3 +175,20 @@ p {
 } */
 
 /* Responsive */
+@media screen and (max-width: 630px) {
+    /* Default HTML Elements */
+    h1 {
+        font-size: 6rem;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+    p {
+        font-size: 1.8rem;
+    }
+
+    /* Custom Classes */
+    .about {
+        width: fit-content;
+    }
+}
