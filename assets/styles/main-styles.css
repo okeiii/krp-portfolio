@@ -44,11 +44,11 @@ h1 {
 }
 h2 {
     font-size: 7vh;
-    /* border-right: .05em solid;
-    animation: caret 1s steps(1) infinite; */
+    margin-top: 0;
 }
 p {
     font-size: 4vh;
+    margin-top: 0;
 }
 a {
     cursor: none;
@@ -70,7 +70,6 @@ a {
     transition: transform 0.2s;
 }
 
-
 /* Navigation */
 .sticky {
     right: 0;
@@ -85,15 +84,15 @@ a {
 }
 .nav a {
     color: #ffffff;
-    font-size: 3.5vh;
+    font-size: 3vh;
     text-decoration: none;
     text-transform: uppercase;
     text-align: end;
     letter-spacing: 0.2vh;
-    line-height: 5rem;
+    line-height: 3.5rem;
 }
 .nav a:hover {
-    font-size: 4.5vh;
+    font-size: 3.7vh;
     transition-duration: 400ms;
 }
 
@@ -115,41 +114,62 @@ a {
     margin: -20px 0 0 23px;
 }
 
-/* About */
-.about {
+/* All Sections */
+.about, .websites, .contact {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     justify-content: center;
     height: 100vh;
+    padding: 0 30rem 0 4rem;
+}
+
+/* About */
+.about {
     color: #ffffff;
     background-color: #111111;
-    padding: 4rem 30rem 4rem 4rem;
 }
 .about h2 {
     color: #ffffff;
 }
 .about p {
     color: #ffffff;
-    margin-top: 0;
 }
 
 /* Websites */
 .websites {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    height: 100vh;
     color: #111111;
     background-color: #ffffff;
-    padding: 4rem 30rem 4rem 4rem;
 }
 .websites h2 {
     color: #111111;
 }
 .websites p {
     color: #111111;
+}
+
+/* Contact */
+.contact {
+    color: #ffffff;
+    background-color: #111111;
+}
+.contact h2 {
+    color: #ffffff;
+}
+.contact p {
+    color: #ffffff;
+    font-size: 2.5vh;
+    margin-bottom: 3rem;
+}
+.socials {
+    display: inline-block;
+}
+.socials img {
+    width: 2.5rem;
+    margin-right: 10px;
+}
+.socials img:hover {
+    width: 3rem;
+    transition-duration: 400ms;
 }
 
 /* Other Effects */
