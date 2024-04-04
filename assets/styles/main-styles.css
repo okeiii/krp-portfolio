@@ -258,8 +258,8 @@ a {
     animation: dbms 3s;
 }
 .resume-btn {
-    width: 10rem;
-    padding: 0.8rem 0 0.8rem 0;
+    width: auto;
+    padding: 0.8rem 3rem 0.8rem 3rem;
     font-size: 2vh;
     margin-top: 2rem;
     cursor: none;
