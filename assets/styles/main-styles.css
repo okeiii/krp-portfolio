@@ -29,8 +29,11 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    background-color: #111111;
     margin: 0;
+    height: 100%;
+    min-height: 100%;
+    cursor: none;
+    background-color: #111111;
 }
 h1 {
     color: #ffffff;
@@ -38,7 +41,6 @@ h1 {
     font-size: 9rem;
     font-weight: 900;
     text-transform: uppercase;
-    animation: color-change 6000ms infinite;
 }
 h2 {
     font-size: 7vh;
@@ -48,6 +50,26 @@ h2 {
 p {
     font-size: 4vh;
 }
+a {
+    cursor: none;
+}
+
+/* Cursor */
+#cursor {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    pointer-events: none;
+    mix-blend-mode: difference;
+    transition: transform 0.2s;
+}
+
 
 /* Navigation */
 .sticky {
@@ -95,25 +117,33 @@ p {
 
 /* About */
 .about {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     height: 100vh;
-    width: 100vh;
     color: #ffffff;
     background-color: #111111;
-    padding: 4rem;
+    padding: 4rem 30rem 4rem 4rem;
 }
 .about h2 {
     color: #ffffff;
 }
 .about p {
     color: #ffffff;
+    margin-top: 0;
 }
 
 /* Websites */
 .websites {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     height: 100vh;
     color: #111111;
     background-color: #ffffff;
-    padding: 4rem;
+    padding: 4rem 30rem 4rem 4rem;
 }
 .websites h2 {
     color: #111111;
@@ -132,47 +162,6 @@ p {
 }
 
 /* Animation Keyframes */
-/* Color Change */
-@keyframes color-change {
-    0% { color: #e3e4e6; }
-    25% { color: #f7d0cb; }
-    50% { color: #f9fafc; }
-    75% { color: #313131; }
-    100% { color: #f6d9d5; }
-}
-/* End Color Change */
-/* Fade In */
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
-  
-@-moz-keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
-  
-@-webkit-keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
-  
-@-o-keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
-  
-@-ms-keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
-/* End Fade In */
-
-/* @keyframes caret {
-    50% {
-      border-color: transparent;
-    }
-} */
 
 /* Responsive */
 @media screen and (max-width: 630px) {
