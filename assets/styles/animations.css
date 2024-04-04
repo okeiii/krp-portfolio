@@ -1,0 +1,66 @@
+/* Keyframes */
+/* Skills Highlight Bar */
+@keyframes web-markup {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 90%;
+    }
+}
+@keyframes javascript {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 70%;
+    }
+}
+@keyframes react {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 55%;
+    }
+}
+@keyframes nodejs {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 65%;
+    }
+}
+@keyframes seo {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 80%;
+    }
+}
+@keyframes php {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 85%;
+    }
+}
+@keyframes java {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 90%;
+    }
+}
+@keyframes dbms {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 70%;
+    }
+}

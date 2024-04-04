@@ -25,6 +25,9 @@
 }
 
 /* Default Elements */
+* {
+    list-style: none;
+}
 html {
     scroll-behavior: smooth;
 }
@@ -33,10 +36,10 @@ body {
     height: 100%;
     min-height: 100%;
     cursor: none;
-    background-color: #111111;
+    background-color: #111;
 }
 h1 {
-    color: #ffffff;
+    color: #fff;
     margin: 1rem;
     font-size: 9rem;
     font-weight: 900;
@@ -83,7 +86,7 @@ a {
     mix-blend-mode: difference;
 }
 .nav a {
-    color: #ffffff;
+    color: #fff;
     font-size: 3vh;
     text-decoration: none;
     text-transform: uppercase;
@@ -92,14 +95,14 @@ a {
     line-height: 3.5rem;
 }
 .nav a:hover {
-    font-size: 3.7vh;
+    scale: 1.2;
     transition-duration: 400ms;
 }
 
 /* Hero */
 .hero-banner {
     height: 100vh;
-    background-color: #111111;
+    background-color: #111;
     padding: 0 3rem;
     display: flex;
     align-items: center;
@@ -107,7 +110,7 @@ a {
     justify-content: space-between;
 }
 .sub {
-    color: #ffffff;
+    color: #fff;
     font-size: 2.8vh;
     letter-spacing: 0.2vh;
     text-transform: uppercase;
@@ -125,42 +128,136 @@ a {
 
 /* About */
 .about {
-    color: #ffffff;
-    background-color: #111111;
+    color: #fff;
+    background-color: #111;
 }
 .about h2 {
-    color: #ffffff;
+    color: #fff;
 }
 .about p {
-    color: #ffffff;
+    color: #fff;
 }
 
 /* Websites */
 .websites {
-    color: #111111;
-    background-color: #ffffff;
+    color: #111;
+    background-color: #fff;
 }
 .websites h2 {
-    color: #111111;
+    color: #111;
 }
 .websites p {
-    color: #111111;
+    color: #111;
+}
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-content: center;
+}
+.projects img {
+    margin: 0 2rem 2rem 0;
+}
+.projects img:hover {
+    scale: 1.1;
+    transition-duration: 400ms;
+}
+
+/* Logos */
+.hf-logo img {
+    width: 23vh;
+}
+.hyl-logo img {
+    width: 12.5vh;
+}
+.sji-logo img {
+    width: 20.5vh;
+}
+.aof-logo img {
+    width: 10vh;
+}
+.ndl-logo img {
+    width: 11.5vh;
+}
+.tbg-logo img {
+    width: 27vh;
+}
+.fccr-logo img {
+    width: 21.5vh;
+}
+.wcf-logo img {
+    width: 9vh;
+}
+.aoc-logo img {
+    width: 10.5vh;
 }
 
 /* Skills */
 .skills {
-    color: #ffffff;
-    background-color: #111111;
+    color: #fff;
+    background-color: #111;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100vh;
+    height: 140vh;
     padding: 0 30rem 5rem 4rem;
 }
 .skills p {
     font-size: 3vh;
+
 }
-.resume {
+.highlight p {
+    margin: 0;
+}
+.bar {
+    background: #6b6b6ba2;
+    display: block;
+    height: 1rem;
+    width: 100%;
+    border-radius: 5rem;
+    overflow: hidden;
+    margin: 0.5rem 0 1.5rem 0;
+}
+.bar span {
+    display: block;
+    height: 1rem;
+    background: #fff;
+    animation-play-state: paused;
+}
+
+.web-markup {
+    width: 90%;
+    animation: web-markup 3s;
+}
+.javascript {
+    width: 70%;
+    animation: javascript 3s;
+}
+.react {
+    width: 55%;
+    animation: react 3s;
+}
+.nodejs {
+    width: 65%;
+    animation: nodejs 3s;
+}
+.seo {
+    width: 80%;
+    animation: seo 3s;
+}
+.php {
+    width: 85%;
+    animation: php 3s;
+}
+.java {
+    width: 90%;
+    animation: java 3s;
+}
+.dbms {
+    width: 70%;
+    animation: dbms 3s;
+}
+.resume-btn {
     width: 10rem;
     padding: 0.8rem 0 0.8rem 0;
     font-size: 2vh;
@@ -168,26 +265,27 @@ a {
     cursor: none;
     border: none;
     border-radius: 0.3rem;
-    color: #111111;
-    background-color: #ffffff;
+    color: #111;
+    background-color: #fff;
 }
-.resume:hover {
+.resume-btn:hover {
     scale: 1.1;
     transition-duration: 400ms;
 }
 
 /* Contact */
 .contact {
-    color: #ffffff;
-    background-color: #111111;
+    color: #fff;
+    background-color: #111;
 }
 .contact h2 {
-    color: #ffffff;
+    color: #fff;
+    margin: 0;
 }
 .contact p {
-    color: #ffffff;
+    color: #fff;
     font-size: 2.5vh;
-    margin-bottom: 3rem;
+    margin: 1.5rem 0 2.5rem 0;
 }
 .socials {
     display: inline-block;
@@ -196,26 +294,10 @@ a {
     width: 2.5rem;
     margin-right: 10px;
 }
-.socials img:hover {
-    scale: 1.3;
-    transition-duration: 400ms;
+.email img {
+    width: 2.3rem;
 }
-
-/* Responsive */
-@media screen and (max-width: 630px) {
-    /* Default HTML Elements */
-    h1 {
-        font-size: 6rem;
-    }
-    h2 {
-        font-size: 3rem;
-    }
-    p {
-        font-size: 1.8rem;
-    }
-
-    /* Custom Classes */
-    .about {
-        width: fit-content;
-    }
+.socials img:hover {
+    scale: 1.2;
+    transition-duration: 400ms;
 }

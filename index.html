@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Keilly Ruth Panis - Web & Software Developer</title>
+        <title>Keilly Ruth Panis - Full Stack Web Developer</title>
         <meta name="description" content="Unlock the essence of creativity in my portfolio, featuring a kaleidoscope of captivating designs and digital innovations. From mesmerizing web layouts to dynamic branding solutions, explore how my work can redefine your digital presence. Let's embark on a journey to elevate your brand together. Dive into my portfolio now." />
         <meta property="og:title" content="Keilly Ruth Panis - Web Developer" />
         <meta property="og:description" content="Unlock the essence of creativity in my portfolio, featuring a kaleidoscope of captivating designs and digital innovations. From mesmerizing web layouts to dynamic branding solutions, explore how my work can redefine your digital presence. Let's embark on a journey to elevate your brand together. Dive into my portfolio now." />
@@ -11,6 +11,8 @@
         <meta property="og:image:alt" content="" />
         <!-- CSS -->
         <link rel="stylesheet" type="text/css" href="assets/styles/main-styles.css" />
+        <link rel="stylesheet" type="text/css" href="assets/styles/animations.css" />
+        <link rel="stylesheet" type="text/css" href="assets/styles/responsive.css" />
         <!-- External CSS -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,6 +44,7 @@
                 </div>
                 <!-- Hero End -->
             </section>
+
             <!-- About -->
             <section id="about" class="about">
                 <h2 class="lexend-deca-400 typing">Weaving code into creativity and functionality.</h2>
@@ -53,31 +56,54 @@
             <!-- Skills -->
             <section id="skills" class="skills">
                 <h2 class="lexend-deca-400">Skills Highlight</h2>
-                <div class="highlight lexend-deca-300">
-                    <p>Web Markup (HTML, CSS)</p>
-                    <p>Javascript</p>
-                    <p>React</p>
-                    <p>NodeJS</p>
-                    <p>Search Engine Optimisation</p>
-                    <p>PHP</p>
-                    <p>Java</p>
-                    <p>Database Management</p>
+                <div class="lexend-deca-300">
+                    <div class="highlight">
+                        <p>Web Markup (HTML, CSS)</p>
+                        <span class="bar"><span class="web-markup"></span></span>
+                        <p>Javascript</p>
+                        <span class="bar"><span class="javascript"></span></span>
+                        <p>React</p>
+                        <span class="bar"><span class="react"></span></span>
+                        <p>NodeJS</p>
+                        <span class="bar"><span class="nodejs"></span></span>
+                        <p>Search Engine Optimisation</p>
+                        <span class="bar"><span class="seo"></span></span>
+                        <p>PHP</p>
+                        <span class="bar"><span class="php"></span></span>
+                        <p>Java</p>
+                        <span class="bar"><span class="java"></span></span>
+                        <p>Database Management</p>
+                        <span class="bar"><span class="dbms"></span></span>
+                    </div>
                 </div>
-                <a href="https://drive.google.com/file/d/1vMpBMcQ8gIVANJP-ioqag8maDJza3GVX/view?usp=share_link" target="_blank"><button class="lexend-deca-300 resume">My Resume</button></a>
+                <a href="https://drive.google.com/file/d/1vMpBMcQ8gIVANJP-ioqag8maDJza3GVX/view?usp=share_link" target="_blank"><button class="lexend-deca-300 resume-btn">My Resume</button></a>
             </section>
             <!-- Skills End -->
 
             <!-- Websites -->
             <section id="websites" class="websites">
                 <h2 class="lexend-deca-400 typing">Websites I painstakingly designed.</h2>
+                <div class="projects">
+                    <a class="hf-logo" href="https://herbalfracture.com" alt="Herbal Fracture" target="_blank"><img src="assets/img/hf-logo.jpg"></a>
+                    <a class="hyl-logo" href="https://holdyourluggage.com" alt="Hold Your Lugagge" target="_blank"><img src="assets/img/hyl-logo.png"></a>
+                    <a class="sji-logo" href="https://www.stjohnisland.com" alt="St John Island" target="_blank"><img src="assets/img/sji-logo.png"></a>
+                    <a class="aof-logo" href="https://adamsoceanfront.com" alt="Adams Ocean Front" target="_blank"><img src="assets/img/aof-logo.png"></a>
+                    <a class="ndl-logo" href="https://newdenverlodge.com" alt="New Denver Lodge" target="_blank"><img src="assets/img/ndl-logo.webp"></a>
+                    <a class="tbg-logo" href="https://admsdev.com/tbg/" alt="Hold Your Luggage" target="_blank"><img src="assets/img/tbg-logo.png"></a>
+                    <a class="fccr-logo" href="https://www.fortcollinscollisionrepair.com" alt="Fort Collins Collision Repair" target="_blank"><img src="assets/img/fccr-logo.webp"></a>
+                    <a class="wcf-logo" href="https://www.wcfmc.com" alt="West Coast Family Medical Care" target="_blank"><img src="assets/img/wcf-logo.png"></a>
+                    <a class="aoc-logo" href="https://altitudeorganic.com/recreational/dispensary-dillon-co/" alt="Altitude Organic Cannabis" target="_blank"><img src="assets/img/aoc-logo.jpg"></a>
+                </div>
             </section>
             <!-- Websites End -->
 
             <!-- Contact -->
             <section id="contact" class="contact">
-                <h2 class="lexend-deca-400 typing">Find me. <br />Or just get in touch.</h2>
+                <h2 class="lexend-deca-400">Find me.</h2>
+                <h2 class="lexend-deca-400 typing">Or just get in touch.</h2>
                 <p class="lexend-deca-300">I can be here, I can be there, I can be everywhere all at once.</p>
                 <div class="socials">
+                    <a class="email" href="mailto:keillypanis@gmail.com" alt="Email Icon"><img src="assets/img/email-icon.svg"></a>
                     <a class="linkedin" href="https://www.linkedin.com/in/keilly-ruth-panis-7a225a216/" alt="LinkedIn Icon" target="_blank"><img src="assets/img/linkedin-icon.svg"></a>
                     <a class="github" href="https://github.com/okeiii" alt="Github Icon" target="_blank"><img src="assets/img/github-icon.svg"></a>
                     <a class="instagram" href="https://www.instagram.com/okei.ruth/?igsh=MWJsM2FmczlpMm0zYQ%3D%3D&utm_source=qr" alt="Instagram Icon" target="_blank"><img src="assets/img/instagram-icon.svg"></a>
