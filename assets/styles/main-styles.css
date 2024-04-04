@@ -114,7 +114,7 @@ a {
     margin: -20px 0 0 23px;
 }
 
-/* All Sections */
+/* About, Websites and Contact */
 .about, .websites, .contact {
     display: flex;
     flex-direction: column;
@@ -147,6 +147,35 @@ a {
     color: #111111;
 }
 
+/* Skills */
+.skills {
+    color: #ffffff;
+    background-color: #111111;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    padding: 0 30rem 5rem 4rem;
+}
+.skills p {
+    font-size: 3vh;
+}
+.resume {
+    width: 10rem;
+    padding: 0.8rem 0 0.8rem 0;
+    font-size: 2vh;
+    margin-top: 2rem;
+    cursor: none;
+    border: none;
+    border-radius: 0.3rem;
+    color: #111111;
+    background-color: #ffffff;
+}
+.resume:hover {
+    scale: 1.1;
+    transition-duration: 400ms;
+}
+
 /* Contact */
 .contact {
     color: #ffffff;
@@ -168,20 +197,9 @@ a {
     margin-right: 10px;
 }
 .socials img:hover {
-    width: 3rem;
+    scale: 1.3;
     transition-duration: 400ms;
 }
-
-/* Other Effects */
-.fade-in {
-  animation: fadeIn 7s;
-  -webkit-animation: fadeIn 7s;
-  -moz-animation: fadeIn 7s;
-  -o-animation: fadeIn 7s;
-  -ms-animation: fadeIn 7s;
-}
-
-/* Animation Keyframes */
 
 /* Responsive */
 @media screen and (max-width: 630px) {
