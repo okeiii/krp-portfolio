@@ -1,18 +1,173 @@
-/* Responsive */
-@media screen and (max-width: 630px) {
-    /* Default HTML Elements */
+/* Screens Above 767px Breakpoint */
+@media only screen and (min-width: 768px) {
+    .screen, .mobile-nav {
+        display: none;
+    }
+}
+
+/* Screens Up to 767px */
+@media only screen and (max-width: 767px) {
+
+    /* Default Elements */
+    * {
+        text-align: center;
+    }
     h1 {
-        font-size: 6rem;
+        font-size: 3.5rem;
     }
     h2 {
-        font-size: 3rem;
+        font-size: 2rem;
     }
     p {
-        font-size: 1.8rem;
+        font-size: 2.5vh;
     }
 
-    /* Custom Classes */
-    .about {
-        width: fit-content;
+    /* Mobile Navigation */
+    .nav {
+        display: none;
+    }
+
+    /* The Mobile Buns */
+    .target-burger {
+        margin: 1.125em;
+        width: 3.25em;
+        height: 3.25em;
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        display: block;
+        transition: all 0.5s ease;
+        mix-blend-mode: difference;
+    }
+    .target-burger:hover {
+        cursor: none;
+        opacity: 0.45;
+    }
+    .target-burger ul.buns {
+        width: 2.625em;
+        height: 0.625em;
+        list-style: none;
+        margin: -0.8125em 0 0 -0.8125em;
+        padding: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transition: transform 1s cubic-bezier(0.23, 1, 0.32, 1), color 1s cubic-bezier(0.23, 1, 0.32, 1);
+        transform: translateZ(0);
+        color: #fff;
+    }
+    .target-burger ul.buns li.bun {
+        width: 100%;
+        height: 3px;
+        background-color: #fff;
+        position: absolute;
+        top: 50%;
+        margin-top: -0.75px;
+        transform: translateY(-3.75px) translateZ(0);
+        transition: transform 1s cubic-bezier(0.23, 1, 0.32, 1), background-color 1s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    .target-burger ul.buns li.bun:last-child {
+        transform: translateY(3.75px) translateZ(0);
+    }
+    
+    .toggled .target-burger ul.buns li.bun {
+        transform: rotate(45deg) translateZ(0);
+    }
+    
+    .toggled .target-burger ul.buns li.bun:last-child {
+        transform: rotate(-45deg) translateZ(0);
+    }
+
+    /* Mobile Menu */
+    nav.main-nav {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 0;
+        height: 100%;
+        width: 100%;
+        padding: 2em;
+        opacity: 0;
+        transform: scale(0.85);
+        transition: all 0.5s ease;
+        box-sizing: border-box;
+    }
+    .toggled nav.main-nav {
+        display: block;
+        z-index: 10;
+        transform: scale(1);
+        opacity: 1;
+        transition: all 0.5s ease;
+    }
+    nav.main-nav ul {
+        padding: 2em 0 0 0;
+    }
+    nav.main-nav ul li {
+        border-bottom: 1px solid rgba(255, 255, 255, .15);
+        list-style: none;
+    }
+    nav.main-nav ul li a {
+        font-size: 1.25em;
+        color: #fff;
+        padding: 1em 0;
+        font-weight: 300;
+        display: block;
+        transition: all 0.5s ease;
+        text-decoration: none;
+    }
+    nav.main-nav ul li a:last-child {
+        border: none;
+    }
+    nav.main-nav ul li a:hover {
+        opacity: 0.45;
+        transition: all 0.5s ease;
+        padding: 1em;
+    }
+
+    /* Mobile Content */
+    .app-content {
+        width: 100%;
+        min-height: 100vh;
+        background-size: cover;
+    }
+    .container {
+        position: relative;
+        transition: all 0.5s ease;
+    }
+    .toggled .container {
+        filter: blur(8px);
+        transition: all 0.5s ease;
+    }
+    /* Hero */
+    .hero-wrapper {
+        padding: 0;
+    }
+    .hero-banner {
+        height: 100vh;
+        justify-content: center;
+    }
+    .sub {
+        margin: 0.5rem;
+    }
+
+    /* Sections */
+    .about, .websites, .contact, .skills {
+        height: auto;
+        padding: 3rem;
+    }
+
+    /* Skills */
+    .highlight p {
+        font-size: 2.5vh;
+        text-align: left;
+    }
+    .projects {
+        justify-content: center;
+    }
+
+    /* Logos */
+    .projects img {
+        height: 9vh;
+        margin: 1rem;
     }
 }

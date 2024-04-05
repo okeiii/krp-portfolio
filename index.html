@@ -10,7 +10,7 @@
         <meta property="og:image" content="" />
         <meta property="og:image:alt" content="" />
         <!-- CSS -->
-        <link rel="stylesheet" type="text/css" href="assets/styles/main-styles.css" />
+        <link rel="stylesheet" type="text/css" href="assets/styles/styles.css" />
         <link rel="stylesheet" type="text/css" href="assets/styles/animations.css" />
         <link rel="stylesheet" type="text/css" href="assets/styles/responsive.css" />
         <!-- External CSS -->
@@ -23,6 +23,29 @@
         <!-- Cursor -->
         <div id="cursor"></div>
         <!-- End Cursor -->
+
+        <!-- Mobile Navigation -->
+        <div class="screen">
+            <a class="target-burger">
+                <ul class="buns">
+                    <li class="bun"></li>
+                    <li class="bun"></li>
+                </ul>
+            </a>
+        </div>
+        <nav class="mobile-nav" role="navigation">
+            <ul>
+                <li><a href="#top">Back to Top</a>
+                <li><a href="#about">About Me</a>
+                <li><a href="#skills">Skills Highlight</a>
+                <li><a href="#websites">Featured Works</a>
+                <li><a href="#contact">Get in Touch</a>
+            </ul>
+        </nav>
+        <div class="container">
+        <div class="app-content">
+        <!-- Mobile Navigation End -->
+
         <!-- Hero Banner -->
         <section class="main">
             <section id="top" class="hero-banner">
@@ -36,7 +59,7 @@
                 </nav>
                 <!-- Navigation End -->
                 <!-- Hero -->
-                <div class="hero">
+                <div id="hero" class="hero">
                     <div class="hero-wrapper">
                         <h1 class="oswald-500">Keilly Ruth Panis</h1>
                         <p class="sub oswald-300">Your average Full Stack Web Developer next door</p>
@@ -84,15 +107,16 @@
             <section id="websites" class="websites">
                 <h2 class="lexend-deca-400 typing">Websites I painstakingly designed.</h2>
                 <div class="projects">
-                    <a class="hf-logo" href="https://herbalfracture.com" alt="Herbal Fracture" target="_blank"><img src="assets/img/hf-logo.jpg"></a>
+                    <a class="hf-logo" href="https://herbalfracture.com" alt="Herbal Fracture" target="_blank"><img src="assets/img/hf-logo.png"></a>
                     <a class="hyl-logo" href="https://holdyourluggage.com" alt="Hold Your Lugagge" target="_blank"><img src="assets/img/hyl-logo.png"></a>
                     <a class="sji-logo" href="https://www.stjohnisland.com" alt="St John Island" target="_blank"><img src="assets/img/sji-logo.png"></a>
                     <a class="aof-logo" href="https://adamsoceanfront.com" alt="Adams Ocean Front" target="_blank"><img src="assets/img/aof-logo.png"></a>
-                    <a class="ndl-logo" href="https://newdenverlodge.com" alt="New Denver Lodge" target="_blank"><img src="assets/img/ndl-logo.webp"></a>
+                    <a class="ndl-logo" href="https://newdenverlodge.com" alt="New Denver Lodge" target="_blank"><img src="assets/img/ndl-logo.png"></a>
                     <a class="tbg-logo" href="https://admsdev.com/tbg/" alt="Hold Your Luggage" target="_blank"><img src="assets/img/tbg-logo.png"></a>
-                    <a class="fccr-logo" href="https://www.fortcollinscollisionrepair.com" alt="Fort Collins Collision Repair" target="_blank"><img src="assets/img/fccr-logo.webp"></a>
+                    <a class="fccr-logo" href="https://www.fortcollinscollisionrepair.com" alt="Fort Collins Collision Repair" target="_blank"><img src="assets/img/fccr-logo.png"></a>
                     <a class="wcf-logo" href="https://www.wcfmc.com" alt="West Coast Family Medical Care" target="_blank"><img src="assets/img/wcf-logo.png"></a>
-                    <a class="aoc-logo" href="https://altitudeorganic.com/recreational/dispensary-dillon-co/" alt="Altitude Organic Cannabis" target="_blank"><img src="assets/img/aoc-logo.jpg"></a>
+                    <a class="aoc-logo" href="https://altitudeorganic.com/recreational/dispensary-dillon-co/" alt="Altitude Organic Cannabis" target="_blank"><img src="assets/img/aoc-logo.png"></a>
+                    <a class="ncc-logo" href="https://www.northwestautocollision.com" alt="Northwest Auto Collision Center" target="_blank"><img src="assets/img/ncc-logo.png"></a>
                 </div>
             </section>
             <!-- Websites End -->
@@ -110,10 +134,11 @@
                 </div>
             </section>
             <!-- Contact End -->
-
         </section>
+        
         <!-- Javascript -->
         <script type="text/javascript" src="assets/js/script.js"></script>
+        <script type="text/javascript" src="assets/js/animations.js"></script>
         <script type="text/javascript" src="assets/js/cursor.js"></script>
     </body>
 </html>

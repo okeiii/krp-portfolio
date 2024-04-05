@@ -146,9 +146,6 @@ a {
 .websites h2 {
     color: #111;
 }
-.websites p {
-    color: #111;
-}
 .projects {
     display: flex;
     flex-wrap: wrap;
@@ -156,40 +153,14 @@ a {
     align-content: center;
 }
 .projects img {
+    height: 10vh;
+    width: auto;
+    max-width: none;
     margin: 0 2rem 2rem 0;
 }
 .projects img:hover {
     scale: 1.1;
     transition-duration: 400ms;
-}
-
-/* Logos */
-.hf-logo img {
-    width: 23vh;
-}
-.hyl-logo img {
-    width: 12.5vh;
-}
-.sji-logo img {
-    width: 20.5vh;
-}
-.aof-logo img {
-    width: 10vh;
-}
-.ndl-logo img {
-    width: 11.5vh;
-}
-.tbg-logo img {
-    width: 27vh;
-}
-.fccr-logo img {
-    width: 21.5vh;
-}
-.wcf-logo img {
-    width: 9vh;
-}
-.aoc-logo img {
-    width: 10.5vh;
 }
 
 /* Skills */
