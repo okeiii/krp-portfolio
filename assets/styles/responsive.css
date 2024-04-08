@@ -1,4 +1,4 @@
-/* Screens between 768px and 1200px */
+/* Screens between 1025px and 1200px */
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {
     h1 {
         font-size: 4rem;
@@ -22,18 +22,19 @@
     }
 }
 
-/* Screens Above 767px Breakpoint */
+/* Screens Above 1025px Breakpoint */
 @media only screen and (min-width: 1025px) {
     .main-nav {
         display: none;
     }
 }
 
-/* Screens Up to 767px */
+/* Screens Up to 1024px */
 @media only screen and (max-width: 1024px) {
     /* Default Elements */
     * {
         text-align: center;
+        cursor: default;
     }
     header {
         position: sticky;
@@ -50,8 +51,14 @@
     p {
         font-size: 2.5vh;
     }
+    a {
+        cursor: default;
+    }
 
     /* Mobile Navigation */
+    #cursor {
+        display: none;
+    }
     .nav {
         display: none;
     }
@@ -213,5 +220,21 @@
     .projects img {
         height: 9vh;
         margin: 1rem;
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 670px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 1.8rem;
+    }
+    nav.main-nav ul {
+        padding: 2em 0 0 0;
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 0.2vh;
+        line-height: 2rem;
     }
 }
