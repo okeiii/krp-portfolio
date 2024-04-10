@@ -6,7 +6,7 @@ This is my website portfolio displaying my range in skill set from web design la
 Technologies Used:
 - HTML
 - CSS
-- Javascript (to be integrated)
+- Javascript
 
 Last Updated:
-20 March 2024 from the cold lands of Toronto
+10 April 2024 from the cold lands of Toronto
